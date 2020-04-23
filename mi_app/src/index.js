@@ -13,3 +13,5 @@ const container = document.getElementById('root')
 //esto es jsx
 //ReactDOM.render(___QUE ,DONDE___)
 ReactDOM.render(element,container)
+
+//<HOLA>MUNDO</HOLA>
