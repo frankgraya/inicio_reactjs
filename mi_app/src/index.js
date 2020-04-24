@@ -9,18 +9,18 @@ import ReactDOM from 'react-dom'
 
 const user = {
   firtsName: 'Raul',
-  lastName: 'palacios',
-  avatar: 'http://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png',
+  lastName: 'palacios'
 }
 
 function getName(user){
-  return '${user.firtsName}'
+  return user.firtsName + user.lastName;
 }
-const name = 'Raul'
 
-const element = <h1>Hello React {getName(user)} </h1>
-const container = document.getElementById('root')
 
-//esto es jsx
-//ReactDOM.render(___QUE ,DONDE___)
-ReactDOM.render(element,container);
+const element =
+<h1>
+  Hello React {getName(user)}
+</h1>
+
+ReactDOM.render(element,document.getElementById('root')
+);
